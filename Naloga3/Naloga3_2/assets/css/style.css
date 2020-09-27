@@ -1,0 +1,119 @@
+.main {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    /*-webkit-justify-content: center;
+            justify-content: center;*/
+    flex-flow: column wrap;
+}
+.logo {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 30px;
+}
+.color-b {
+    color: blue;
+}
+.color-o {
+    color: orange;
+}
+.color-g {
+    color: red;
+}
+.color-l {
+    color: yellow;
+}
+.color-e {
+    color: green;
+}
+h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 37px;
+    color: grey;
+}
+h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    color: grey;
+}
+.container {
+    background-color: #E0E0E0;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    padding-bottom: 30px;
+}
+.login-cont {
+    background-color: #E0E0E0;
+    width: 398px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    flex-flow: column wrap;
+}
+.img {
+    width:100px;
+    border-radius: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.input {
+    background-color: white;
+    height: 30px;
+    width: 290px;
+    border-radius: 10px;
+    padding-left: 10px;
+    text-align: left;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.gumb {
+    background-color: #3F3FF0;
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center
+    display: inline-block;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 10px;
+    outline: none;
+
+}
+p {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+
+}
+a {
+    color: #3F3FF0;
+}
+a:link {
+    text-decoration: none;
+}
+.products {
+ background-color: white;
+    display: flex;
+    align-items: center;
+}
+.icon {
+    width: 15px;
+    margin-right: 10px;
+}
+hr {
+    background-color: black;
+}
+.footer {
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    margin: 0 5px 0 5px;
+
+}
+
+
+

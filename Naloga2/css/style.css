@@ -1,0 +1,103 @@
+body{
+    background-color: #303030;
+    color: white;
+    font-family: georgia;
+}
+h1{
+    font-family: courier new;
+    font-size: 30px;
+    font-variant: small-caps;
+    color: #4CAF50;
+    letter-spacing: 5px;
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-bottom: 0em;
+    margin-right: 0em;
+}
+h1.first-big-letter::first-letter{
+    font-size:70px;
+    background-color:#4CAF50;
+    color: #303030;
+    letter-spacing: 0px;
+}
+/*
+.first-big-letter:hover::first-letter{
+    background-color: #4CAF50;
+    color: #303030;
+}
+.first-big-letter:hover{
+    color: #4CAF50;
+}
+*/
+.first-big-letter{
+    position: relative;
+    animation-name: logo;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes logo{
+    0% {background-color:#303030; color:#FFFFFF; text-align: left;}
+    10%{background-color:#252525; color:#FFFFFF; text-align: left;}
+    20%{background-color:#202020; color:#FFFFFF; text-align: left;}
+    30%{background-color:#151515; color:#FFFFFF; text-align: center;}
+    40%{background-color:#101010; color:#FFFFFF; text-align: center;}
+    50%{background-color:#000000; color:#FFFFFF; text-align: right;}
+    60%{background-color:#101010; color:#FFFFFF; text-align: right;}
+    70%{background-color:#151515; color:#FFFFFF; text-align: center;}
+    80%{background-color:#202020; color:#FFFFFF; text-align: center;}
+    90%{background-color:#252525; color:#FFFFFF; text-align: left;}
+    100%{background-color:#303030; color:#FFFFFF; text-align: left;}
+}
+hr.top-line{
+    height: 2px;
+    background-color: white;
+    margin top: 0px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+}
+.search-bar{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+
+}
+h2{
+    font-style: italic;
+    font-size: 25px;
+}
+.img{
+    width: 150px;
+    border: 5px black solid;
+    border-radius: 10%;
+}
+.resize-pic:hover{
+    width: 320px;
+   /* margin-left: 50%;*/
+    border: 10px black solid;
+    border-radius: 100%;
+}
+.button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #338A33;
+    color: white;
+    font-size:
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* top, left, bottom, right*/
+    margin: 5px 0px 5px 0px;
+}
+.button:hover{
+    background-color: #4CAF50;
+}
+p.info{
+    font-size: 15px;
+    font-weight: bold;
+}
+.span-text{
+    font-weight: normal;
+}
