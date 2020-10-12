@@ -1,0 +1,73 @@
+body {
+    background-image: url("/static/img/background1.jpg");
+}
+
+.nav {
+    display: grid;
+    grid-template:
+    ". nav-bar ." 70px;
+    place-content: center;
+}
+
+.nav-bar {
+    grid-areas: nav-bar;
+    background-color: transparent;
+    overflow: auto;
+}
+
+.nav-bar a {
+    float: left;
+    text-align: center;
+    padding: 12px 15px;
+    transition: all 0,3s ease;
+    color: white;
+    font-size: 20px;
+    text-decoration: none
+}
+
+.nav-bar a:hover {
+    border-bottom: 4px solid orange;
+    padding-bottom: -1px;
+}
+
+.active {
+    background-color: orange;
+}
+
+.text-lg {
+    font-size: 65px;
+}
+
+.text-lgh-white{
+    color: white;
+    font-weight: 200;
+}
+
+.text-bd-orng {
+    color: orange;
+    font-weight: bolder;
+}
+
+.text-sm-white {
+    font-size: 15px;
+    color: white;
+}
+
+.main {
+    display: grid;
+    grid-template:
+    ". main-text .";
+    place-content: center;
+    margin-top: 300px;
+    text-align: center;
+}
+
+.main-text {
+    grid-area: main-text;
+}
+
+.main p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 0;
+}

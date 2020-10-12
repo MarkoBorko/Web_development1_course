@@ -1,0 +1,68 @@
+body {
+    background-color: #ded9e2;
+}
+
+.nav {
+    display: grid;
+    grid-template:
+    ". nav-bar ." 70px;
+    place-content: center;
+}
+
+.nav-bar {
+    grid-areas: nav-bar;
+    background-color: transparent;
+    overflow: auto;
+}
+
+.nav-bar a {
+    float: left;
+    text-align: center;
+    padding: 12px 15px;
+    transition: all 0,3s ease;
+    color: white;
+    font-size: 20px;
+    text-decoration: none
+}
+
+.nav-bar a:hover {
+    border-bottom: 4px solid #80a1d4;
+    padding-bottom: -1px;
+}
+
+.active {
+    background-color: #80a1d4;
+}
+
+.portfolio {
+    display: grid;
+    grid-template:
+    ". portfolio-box ."
+    /1fr 800px 1fr;
+    margin-top: 150px;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.portfolio-box {
+    grid-area: portfolio-box;
+    background-color: #c0b9dd;
+    border-radius: 8px;
+}
+
+.portfolio-text {
+    padding: 0 10px 10px 10px;
+    color: white;
+}
+
+.portfolio-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.portfolio-title {
+    padding: 10px 10px 0 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}

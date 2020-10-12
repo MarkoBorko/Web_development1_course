@@ -1,0 +1,62 @@
+body {
+    background-color: #a8dadc;
+}
+
+.nav {
+    display: grid;
+    grid-template:
+    ". nav-bar ." 70px;
+    place-content: center;
+}
+
+.nav-bar {
+    grid-areas: nav-bar;
+    background-color: transparent;
+    overflow: auto;
+}
+
+.nav-bar a {
+    float: left;
+    text-align: center;
+    padding: 12px 15px;
+    transition: all 0,3s ease;
+    color: #1d3557;
+    font-size: 20px;
+    text-decoration: none
+}
+
+.nav-bar a:hover {
+    border-bottom: 4px solid #f1faee;
+    padding-bottom: -1px;
+}
+
+.active {
+    background-color: #f1faee;
+}
+
+.about {
+    display: grid;
+    grid-template:
+    ". about-box ."
+    /1fr 800px 1fr;
+    margin-top: 150px;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.about-box {
+    grid-area: about-box;
+    background-color: #457b9d;
+    border-radius: 8px;
+}
+
+.about-text {
+    padding: 0 10px 10px 10px;
+    color: white;
+}
+.about-title {
+    padding: 10px 10px 0 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}

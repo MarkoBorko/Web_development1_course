@@ -1,0 +1,430 @@
+.grid {
+    background-color: white;
+    display: grid;
+    grid-template:
+    "header header header"
+    "slider slider slider"
+    "services services services"
+    "appointment appointment appointment"
+    "faq faq faq"
+    "footer footer footer"
+    / 1fr 4fr 1fr;
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.slider {
+    grid-area: slider;
+}
+/*  */
+.services{
+    grid-area: services;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "services-title"
+    "styling"
+    "coloring"
+    "haircuts";
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+.services-title {
+    grid-area: services-title;
+    border: none;
+    text-align: center;
+}
+
+.styling {
+    grid-area: styling;
+    justify-element: start;
+}
+
+.coloring {
+    grid-area: coloring;
+    justify-element: center;
+}
+
+.haircuts {
+    grid-area: haircuts;
+    justify-element: end;
+}
+/* Vse iz sekcije appointment */
+.appointment{
+    grid-area: appointment;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "appoint-title"
+    "appoint-cont"
+    "termin";
+}
+
+.appoint-title {
+    grid-area: appoint-title;
+    justify-self: center;
+}
+
+.appoint-cont{
+    grid-area: appoint-cont;
+    background-color: #f8f9fa;
+}
+/* */
+.input-box {
+  position: relative;
+  margin: 20px 0 10px 0;
+}
+.input-item, .input-date, .input-time, .input-rqst {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 450px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+}
+
+.input-chckbx {
+    margin-left: 25px;
+}
+input:focus {
+    border: 3px solid #007bff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.label-item {
+    font-size: 18px;
+    position: absolute;
+    pointer-events:  none;
+    left: 30px;
+    top: 8px;
+    transition:0.2s ease all;
+}
+.input-item:focus ~ .label-item, .input-item:valid ~ .label-item {
+    top: -10px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #007bff;
+}
+.input-rqst:focus ~ .label-item, .input-rqst:valid ~ .label-item {
+    top: -10px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #007bff;
+}
+
+.gumb {
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.appoint-date {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.termin {
+    grid-area: termin;
+    background-color: #f8f9fa;
+}
+/* tabela - (vrstice, stolpci, obarvanje vrstic) */
+table {
+    font-size: 18px;
+    margin: 30px auto;
+}
+tr {
+    height: 40px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+td {
+    width: 200px;
+    padding-left: 5px;
+}
+
+
+.faq {
+    grid-area: faq;
+}
+.faq-container {
+    display: grid;
+    grid-template:
+    "faq-title"
+    "faq-item1"
+    "faq-item2"
+    "faq-item3"
+    /1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.faq-title {
+    grid-area: faq-title;
+    text-align: center;
+}
+
+.faq-item1 {
+    background-color: #f8f9fa;
+    grid-area: faq-item1;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.faq-item2 {
+    background-color: #f8f9fa;
+    grid-area: faq-item2;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.faq-item3 {
+    background-color: #f8f9fa;
+    grid-area: faq-item3;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #323232;
+    color: #CCC;
+}
+.footer-cont {
+    background-color: #323232;
+    display: grid;
+    grid-template:
+    "footer-contact"
+    "footer-navigation"
+    "footer-middle"
+    /1fr;
+    grid-gap: 10px;
+    padding: 50px 50px 50px 50px;
+    align-items: center;
+    justify-items: center;
+}
+.footer-contact {
+    grid-area: footer-contact;
+}
+
+.footer-middle {
+    grid-area: footer-middle;
+}
+
+.footer-navigation {
+    grid-area: footer-navigation;
+}
+.footer-contact ul {
+    list-style-type:none;
+    padding: 0;
+}
+.footer-navigation ul {
+    list-style-type:none;
+    padding: 0;
+}
+.footer-navigation a {
+    color: white;
+}
+.footer-middle img:hover {
+
+}
+/* ZA VEČJE OD MOBILCOV */
+@media (min-width: 768px){
+  .grid {
+    background-color: white;
+    display: grid;
+    grid-template:
+    "header header header" 60px
+    "slider slider slider"
+    ". services ."
+    ". appointment ."
+    ". faq ."
+    "footer footer footer"
+    / 1fr 4fr 1fr;
+    }
+    .header {
+        grid-area: header;
+    }
+
+    .slider {
+        grid-area: slider;
+    }
+    .services{
+    grid-area: services;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "services-title services-title services-title"
+    "styling coloring haircuts";
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-items: center;
+    }
+    .services-title {
+    grid-area: services-title;
+    border: none;
+    text-align: center;
+    }
+
+    .styling {
+        grid-area: styling;
+        justify-element: start;
+    }
+
+    .coloring {
+        grid-area: coloring;
+        justify-element: center;
+    }
+
+    .haircuts {
+        grid-area: haircuts;
+        justify-element: end;
+    }
+    .appointment{
+    grid-area: appointment;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "appoint-title appoint-title appoint-title"
+    "appoint-cont . termin";
+    }
+    .appoint-title {
+    grid-area: appoint-title;
+    justify-self: center;
+    }
+    .appoint-cont{
+    grid-area: appoint-cont;
+    background-color: #f8f9fa;
+    }
+    /* */
+    .input-box {
+      position: relative;
+      margin: 20px 0 10px 0;
+    }
+    .input-item, .input-date, .input-time, .input-rqst {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 450px;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 0 auto;
+        background-color: #f8f9fa;
+    }
+
+    .input-chckbx {
+        margin-left: 25px;
+    }
+    input:focus {
+        border: 3px solid #007bff;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .label-item {
+        font-size: 18px;
+        position: absolute;
+        pointer-events:  none;
+        left: 30px;
+        top: 8px;
+        transition:0.2s ease all;
+    }
+    .input-item:focus ~ .label-item, .input-item:valid ~ .label-item {
+        top: -10px;
+        background-color: #f8f9fa;
+        font-size: 14px;
+        color: #007bff;
+    }
+    .input-rqst:focus ~ .label-item, .input-rqst:valid ~ .label-item {
+        top: -10px;
+        background-color: #f8f9fa;
+        font-size: 14px;
+        color: #007bff;
+    }
+
+    .gumb {
+        width: 100px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .appoint-date {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .termin {
+        grid-area: termin;
+        background-color: #f8f9fa;
+    }
+    /* tabela - (vrstice, stolpci, obarvanje vrstic) */
+    table {
+        font-size: 18px;
+        margin: 30px auto;
+    }
+    tr {
+        height: 40px;
+
+    }
+
+    tr:nth-child(even) {
+        background-color: #F2F2F2;
+    }
+
+    td {
+        width: 200px;
+        padding-left: 5px;
+    }
+
+
+    .faq {
+        grid-area: faq;
+    }
+    .faq-container {
+    display: grid;
+    grid-template:
+    "faq-title faq-title" 60px
+    "faq-item1 faq-item1" 1fr
+    "faq-item2 faq-item3" 1fr
+    / 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    }
+    .footer-cont {
+    background-color: #323232;
+    display: grid;
+    grid-template:
+    "footer-contact footer-middle footer-navigation" 1fr
+    /1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 50px 50px 50px 50px;
+    align-items: center;
+    justify-items: center;
+    }
+}

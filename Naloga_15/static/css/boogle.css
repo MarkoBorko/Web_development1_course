@@ -1,0 +1,124 @@
+.main {
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+}
+.header {
+    background-color: white;
+    display: flex;
+    flex-flow: row-reverse;
+}
+.icon{
+    width: 30px;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+
+
+}
+a {
+    color: black;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-top: 200px;
+
+}
+.logo {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.color-b {
+    color: blue;
+}
+.color-o {
+    color: orange;
+}
+.color-g {
+    color: red;
+}
+.color-l {
+    color: yellow;
+}
+.color-e {
+    color: green;
+}
+.search-bar {
+    width: 550px;
+    height: 30px;
+    border: 1px outset #ccc;
+    border-radius: 20px;
+    padding-left: 20px;
+    outline: none;
+}
+.search-bar:hover {
+    border: 2px outset #ccc;
+    border-radius: 20px;
+}
+.buttons {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: 30px 0 400px;
+}
+.gumb {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+button {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+
+}
+button:hover {
+    border: 2px outset #ccc;
+    border-radius: 5px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    margin: 10px 0 20px 0px;
+
+}
+.left-footer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 30%;
+    margin-left: 10px;
+
+}
+.right-footer {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    width: 70%;
+    margin-right: 10px;
+}
+.left-footer div {
+    margin-right: 10px;
+}
+.right-footer div {
+    margin-right: 10px;
+}

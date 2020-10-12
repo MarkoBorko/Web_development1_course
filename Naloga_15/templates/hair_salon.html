@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/hair_salon.css">
+    <title>HAIR SALON HANS</title>
+
+</head>
+<body>
+<div class="grid">
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+            <a class="navbar-brand" href="#">
+                <img src="/static/img/logo.png" width="40" height="40" class="d-inline-block align-center" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Coloring</a>
+                            <a class="dropdown-item" href="#">Haircuts</a>
+                            <a class="dropdown-item" href="#">Styling</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <div class="slider">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/static/img/HH_logo1.png" class="d-block w-100" alt="..." >
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/7.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Coloring</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/8.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Haircuts</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/4.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Styling</h1>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="services">
+        <div class="services-title">
+            <h1>Our services</h1>
+        </div>
+        <div>
+            <div class="card" style="width: 25rem;">
+                <img src="/static/img/7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Coloring</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 25rem;">
+                <img src="/static/img/8.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Haircuts</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 25rem;">
+                <img src="/static/img/4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Styling</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="appointment">
+        <div class="appoint-title">
+            <h1>Make an appointment</h1>
+        </div>
+        <div class="appoint-cont">
+            <div class="input-box">
+                <input class="input-item" type="text" required>
+                <label class="label-item">First and last name</label>
+            </div>
+            <div class="input-box">
+                <input class="input-item" type="text" required>
+                <label class="label-item">Phone number</label>
+            </div>
+            <div class="input-box">
+                <input class="input-date" type="date">
+            </div>
+            <div class="input-box">
+                <input class="input-time" type="time">
+            </div>
+            <div class="input-box">
+                <input class="input-rqst" type="text" required>
+                <label class="label-item">Add special requests...</label>
+            </div>
+            <div class="input-box">
+                <input class="input-chckbx" type="checkbox" id="Hans">
+                <label for="Hans">I agree Hans is the best hairdresser</label>
+            </div>
+            <div class="input-box">
+                <button type="button" class="btn btn-primary gumb">Send</button>
+            </div>
+        </div>
+        <div class="termin">
+            <table  align="center">
+                <tr>
+                    <th>Day</th>
+                    <th>Working hours</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>10:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>12:00 - 20:00</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>8:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>CLOSED</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="faq-container">
+            <div class="faq-title">
+                <h1>FAQ (frequently asked questions)</h1>
+            </div>
+            <div class="faq-item1">
+                <h3>Do you have gift certificates?</h3>
+                <hr>
+                <p>Gift certificates are available for purchase in the salon or over
+                    the phone. If purchase a gift certificate over the phone, we can either
+                    mail it to your lucky recipient or simply keep it in our files. Elixir salon
+                    gift certificates are not redeemable for cas or refundable.
+                </p>
+            </div>
+            <div class="faq-item2">
+                <h3>Can I bring my pet dog</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, voluptas?</p>
+            </div>
+            <div class="faq-item3">
+                <h3>What awards did you receive so far?</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, voluptas?</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-cont">
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Friseur Hans GmbH</li>
+                    <li>Tax number:  3234324234</li>
+                    <li>Friseurgasse 5, 1020 Wien</li>
+                    <li>Phone: 0668/345435346</li>
+                    <li>Email: friseur.hans@f-hans.com</li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <img src="/static/img/logo.png" width="200px">
+            </div>
+            <div class="footer-navigation">
+                <h4>Navigation</h4>
+                <ul>
+                    <a href="#"><li>Our services</li></a>
+                    <a href="#"><li>Make an appointment</li></a>
+                    <a href="#"><li>FAQ</li></a>
+                    <a href="#"><li>About us</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
